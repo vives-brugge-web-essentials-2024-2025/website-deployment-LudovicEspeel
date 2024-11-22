@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web essentials Example 2">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Ludovic Espeel, Ronny Mees">
+    <title>Example 2: CSS</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+</head>
+
+<body>
+    <h1>Virtual student</h1>
+    <h3>About</h3>
+    <div class="about">
+        <img src="./resources/images/avatar.jpg" alt="VIVES">
+        <p>Hello, I am an AI student at <strong>VIVES</strong>.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea fugit iste recusandae eius iusto nobis omnis
+            labore saepe dolor eaque modi accusamus, est esse dolorem aspernatur veritatis iure porro quae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim rerum rem consequuntur tenetur voluptate hic
+            corporis fuga incidunt eos perferendis libero, aspernatur doloribus ipsum quod, mollitia quaerat nesciunt
+            neque officia?</p>
+    </div>
+    <div class="center">
+        <div class="left">
+            <h3>Activities</h3>
+            <p class="italic">(This is an estimated value)</p>
+            <table>
+                <tr>
+                    <th>Activity</th>
+                    <th>Time/week</th>
+                </tr>
+                <tr>
+                    <td>Studies</td>
+                    <td>36h</td>
+                </tr>
+                <tr>
+                    <td>Sports</td>
+                    <td>8h</td>
+                </tr>
+                <tr>
+                    <td>Gaming</td>
+                    <td>20h</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <h3>Favorite movies</h3>
+            <ol type="1">
+                <li><a href="https://thetvdb.com/movies/star-wars-rise-of-skywalker" target="_blank">Episode IX &ndash;
+                        The Rise of Skywalker</a></li>
+                <li><a href="https://thetvdb.com/movies/fast-furious-10" target="_blank">Fast X</a></li>
+                <li><a href="https://thetvdb.com/movies/avengers-infinity-war" target="_blank">Avengers: Infinity
+                        War</a></li>
+            </ol>
+        </div>
+    </div>
+    <h3>Contact</h3>
+    <div class="formcontainer">
+        <form action="test.html">
+            <div class="row">
+                <div class="col-25">
+                    <label for="tbName">Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="tbName" placeholder="Type your name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="tbEmail">Email:</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="tbEmail" placeholder="Type your email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="tbMessage">Message:</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="tbMessage" name="tbMessage"  cols="30" rows="10" placeholder="Type your message"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy;2024 Electronics-ICT</p>
+    </div>
+</body>
+
+</html>

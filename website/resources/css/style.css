@@ -1,0 +1,171 @@
+/* all sizing of boxes is set to include borders and paddings*/ 
+* {
+    box-sizing: border-box; /* breedte en hoogte van een element wordt berekend inclusief de padding en border. */
+    /* standaardwaarde: content-box: breedte & hoogte element exclusief padding en border */
+  }
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #47476b;
+}
+
+body {
+    width: 800px;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    background-color: #d1d1e0;
+}
+
+
+h1 {
+    font-size: 40px;
+    color: #47476b;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 20px;
+    color: #29293d;
+    text-decoration: underline;
+}
+
+.about {
+    overflow: hidden; /* alles wat buiten de grootte van het element/container valt, wordt niet weergegeven. */
+    /* standaardwaarde: visible, de inhoud loopt gewoon door buiten het element/container als het te groot is */
+}
+
+.about img {
+    float: right;
+    margin: 10px;
+    padding: 5px;
+    border: #47476b 1px solid;
+    border-radius: 5px;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.italic {
+    font-style: italic;
+    color: gray;
+    font-size: 10px;
+}
+
+.center {
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #47476b;
+    padding: 6px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #29293d;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #47476b;
+}
+
+li a:hover {
+    color: white;
+}
+
+.formcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* pseudo-element dat na de inhoud van het element .row wordt geplaatst */
+.row::after {
+    content: ""; /* pseudo-element zichtbaar maken door een lege string toe te voegen */
+    display: table; /* pseudo-element gedraagt zichzelf als een "table" */
+    clear: both; 
+    /* pseudo-element wordt niet naast gefloate elementen wordt geplaatst, 
+    maar eronder, waardoor het de hoogte van de gefloate children in de container opneemt.*/
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* allows the user to resize the textarea vertically */
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block; /* allows the label to be on the same line as the input */
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #47476b;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #29293d;
+    color: white;
+    border-radius: 5px;
+}
